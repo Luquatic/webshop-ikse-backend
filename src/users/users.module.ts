@@ -9,12 +9,8 @@ import {UsersService} from './users.service';
         name: User.name,
         schema: UserSchema
     }])],
-    controllers: [
-        UsersController
-    ],
-    providers: [
-        UsersService
-    ]
+    controllers: [UsersController],
+    providers: [UsersService]
 })
 export class UsersModule {
 

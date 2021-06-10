@@ -3,7 +3,7 @@ import {UsersService} from './users.service';
 import {CreateUserDto} from './dto/create-user.dto';
 import {User} from './schemas/users.schema';
 
-@Controller('users')
+@Controller()
 export class UsersController {
     constructor(private readonly usersService: UsersService) {}
 
@@ -12,7 +12,7 @@ export class UsersController {
         await this.usersService.create(createUserDto);
     }
 
-    @Get()
+    @Get('/api/users')
     async findAll(): Promise<User[]> {
         return this.usersService.findAll()
     }
