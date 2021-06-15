@@ -6,6 +6,7 @@ import {UsersModule} from './users/users.module';
 import {AuthModule} from './auth/auth.module';
 import {DATABASE_CONNECTION} from './constants';
 import {ProductsModule} from './products/products.module';
+import {UsersService} from './users/users.service';
 
 @Module({
     imports: [

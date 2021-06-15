@@ -5,10 +5,10 @@ export type UserDocument = User & Document;
 
 @Schema()
 export class User {
-    @Prop({required: true})
+    @Prop()
     firstname: string;
 
-    @Prop({required: true})
+    @Prop()
     lastname: string;
 
     @Prop({required: true})
