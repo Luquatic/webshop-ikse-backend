@@ -13,7 +13,6 @@ import {JWT_SECRET} from '../constants';
         PassportModule,
         JwtModule.register({
             secret: JWT_SECRET,
-            signOptions: { expiresIn: '60s' },
         }),
     ],
     providers: [AuthService, LocalStrategy, JwtStrategy],
